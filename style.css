@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Dancing+Script&family=Lobster&family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600&family=Rubik+Moonrocks&family=Smooch&family=Splash&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --clr-title: #F3F3F4 ;
+    --clr-text: #d1d7da ;
+    --clr-nav: #AEB3B7;
+    /** ### Primary **/
+    --Dark-Blue-head: hsl(217, 28%, 15%); /* (intro and email sign up background) */
+    --Dark-Blue-main: hsl(218, 28%, 13%); /* (main background) */
+    --Dark-Blue-footer: hsl(216, 53%, 9%); /* (footer background) */
+    --Dark-Blue-testimonials: hsl(219, 30%, 18%); /* (testimonials background) */
+    /** ### Accent **/
+    --Cyan: hsl(176, 68%, 64%); /*  (inside call-to-action gradient) */
+    --Blue: hsl(198, 60%, 50%); /*  (inside call-to-action gradient) */
+    --Light-Red: hsl(0, 100%, 63%); /* (error) */
+
+
+}
+/**** Phone design ****/
+body{
+    background: var(--Dark-Blue-main);
+}
+/** start header **/
+header{
+    background-color: var(--Dark-Blue-head);
+    width: 100%;
+    height: 4.6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6em .8em;
+}
+header .logo{
+    width: 6.8em;
+}
+header .logo img{
+    width: 6em;
+    height: 1.7em;
+}
+header ul{
+    width: 10em;
+    height: 1.5em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+header ul li{
+    font-size: .75rem;
+    cursor: pointer;
+    color: var(--clr-nav);
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    transition: all .5s;
+}
+
+header ul li:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+/** end header **/
+
+/** start main **/
+main{
+    width: 100%;
+    height: 45em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+main .image_box{
+    max-width: 90%;
+    height: 18em;
+    margin: 0 auto;
+}
+main .image_box img{
+    max-width: 100%;
+    height: 18em;
+}
+main h1{
+    width: 90%;
+    height: 4em;
+    text-align: center;
+    color: var(--clr-title);
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+main p{
+    width: 90%;
+    color: var(--clr-text);
+    text-align: center;
+    line-height: 1.45em;
+}
+main .btn_1{
+    padding: 15px 55px;
+    color: white;
+    background:linear-gradient(to right ,var(--Cyan) , var(--Blue) 95%);
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: .7rem;
+    margin-top: 1em;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+main .btn_1:hover{
+    background: var(--Cyan);
+}
+/** end main **/
+/** start features section **/
+.features{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+.features .card{
+    width: 90%;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7em;
+    text-align: center;
+}
+.features .card h1{
+    font-family: 'Raleway', sans-serif;
+    color: var(--clr-title);
+}
+.features .card p{
+    color: var(--clr-text);
+    line-height: 1.5em;
+}
+/** end features section **/
+/** start About section **/
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 .8em;
+}
+.about .image_box{
+    max-width: 90%;
+    height: 18em;
+    margin: 0 auto;
+}
+.about .image_box img{
+    max-width: 100%;
+    height: 18em;
+}
+.about h1{
+    color: var(--clr-title);
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: .3em 0;
+}
+.about p{
+    color: var(--clr-text);
+    line-height: 1.5em;
+    margin: .7em 0;
+    font-weight: 500;
+}
+.about a{
+    color: var(--Cyan);
+    width: 12em;
+    height: 2em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    border-bottom: 1px solid hsl(176, 68%, 64%) ;
+    text-decoration-line:none ;
+    transition: all .3s ;
+}
+.about a:hover{
+    color: var(--clr-text);
+    border-bottom: 1px solid #d1d7da;
+}
+/** end About section **/
+/** start comments section **/
+.comments{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    position: relative;
+}
+.comments::before{
+    content: "";
+    width: 2.5em;
+    height: 2em;
+    position: absolute;
+    top: -2.1em; left: 2em;
+    background: url(images/bg-quotes.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.comments .cards{
+    width: 86%;
+    height: 14em;
+    background: #283143;
+    border-radius: 10px;
+    padding: .5em 1em;
+}
+.comments .cards p{
+    color: var(--clr-text);
+    margin: 1em auto;
+    font-size: .9rem;
+    line-height: 1.5em;
+}
+.comments .cards .profile{
+    display: flex;
+    gap: .8em;
+    height: 4em;
+
+}
+.comments .cards .profile img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    
+}
+.comments .cards .profile p{
+    margin:0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+.comments .cards .profile p .name{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+/** end comments section **/
+/** start footer **/
+footer{
+    width: 100%;
+    height: 65em;
+    position: relative;
+    background: var(--Dark-Blue-footer);
+}
+footer .email_box{
+    width: 80%;
+    height: 20em;
+    background: #1c232f;
+    position: absolute;
+    transform: translate(2.4em , -8.3em);
+    box-shadow: 1px 2px 5px black;
+    border-radius: 10px;
+    padding-top: 1em;
+}
+footer .email_box h1{
+    color: var(--clr-title);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1em 0;
+}
+footer .email_box p{
+    width: 19.5em;
+    text-align: center;
+    color: var(--clr-text);
+    font-size: .9rem;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+footer .email_box form{
+    width: 17em;
+    height: 8em;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+footer .email_box form input{
+    border: 0;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+footer .email_box form button{
+    border: 0;
+    width: 100%;
+    padding: 15px 20px;
+    color: white;
+    background:linear-gradient(to right ,var(--Cyan) , var(--Blue) 95%);
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+footer .email_box form button:hover{
+    background: var(--Cyan);
+}
+footer .Logo{
+    padding: 14em 0 2em 2em;
+    padding-left: 2em;
+    width: 6.8em;
+}    
+footer .logo img{
+    width: 6em;
+    height: 1.7em;
+}
+.inner_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: 2em;
+}
+.inner_footer .location{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+.inner_footer .location p{
+    color: var(--clr-text);
+    line-height: 1.5em;
+    font-size: 1.1rem;
+    width: 16em;
+}
+.inner_footer .phone{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    font-size: 1.1rem;
+    color: var(--clr-text);
+}
+.inner_footer .gmail{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    font-size: 1.1rem;
+    color: var(--clr-text);
+}
+.inner_footer .navbar_1 ul{
+    list-style: none;
+    color: var(--clr-text);
+    margin-top: 2em;
+}
+.inner_footer .navbar_1 ul li{
+    margin-bottom: 1em;
+}
+.inner_footer .navbar_2 ul{
+    list-style: none;
+    color: var(--clr-text);
+}
+.inner_footer .navbar_2 ul li{
+    margin-bottom: 1em;
+}
+.inner_footer .social_media{
+    width: 90%;
+    text-align: center;
+}
+.inner_footer .social_media svg{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+}footer .attribution{
+    font-size: 11px;
+     text-align: center; 
+     margin-top: 5em;
+     color: white;
+}
+footer .attribution a{
+    color: hsl(228, 45%, 44%); 
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+}
+/** end footer **/
+
+
+
+/*** desktop design ***/
+@media (min-width: 1000px){
+    /** start header **/
+    header{
+        padding: 0 3em;
+    }
+    header .logo img{
+        width: 9em;
+        height: 2.5em;
+    }
+    header ul{
+        width: 17em;
+    }
+    header ul li{
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        transition: all .5s;
+    }
+    /** end header **/
+    /** start main **/
+    main{
+        width: 100%;
+        height: 45em;
+        
+    }
+    main h1{
+        width: 40%;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    main p{
+        width: 40%;
+        font-size: 1.4rem;
+    }
+    main .btn_1{
+        padding: 15px 80px;
+        font-size: 1rem;
+        margin: 1em 0;
+    }
+    /** end main **/
+    /** start features section **/
+    .features{
+        width: 90%;
+        max-height: 80vh;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        align-items: initial;
+        justify-content: center;
+    }
+    .features .card{
+        width: 30em;
+        height: 15em;
+    }
+    .features .card p{
+        width: 22em;
+    }
+    /** start features section **/
+    /** start About section **/
+.about{
+    width: 90%;
+    height: 25em;
+    margin: 3em auto;
+    gap: 3em;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+}
+.about h1{
+    color: var(--clr-title);
+    width: 10em;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: .3em 0;
+}
+.about a{
+    width: 13em;
+}
+.about a img{
+    width: 2em;
+    height: 2em;
+}
+/** end About section **/
+/** start comments section **/
+.comments{
+    width: 100%;
+    height: 40vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+    align-items: initial;
+    justify-content: center;
+    margin: 2em 0 10em 0;
+}
+.comments::before{
+    top: -1.7em; left: 2em;
+    z-index: -1;
+}
+.comments .cards{
+    width: 26em;
+    height: 14em;
+}
+/** end comments section **/
+/** start footer **/
+footer{
+    width: 100%;
+    height: 45em;
+}
+footer .email_box h1{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+footer .email_box p{
+    width: 45em;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+footer .email_box form{
+    width: 47em;
+    height: 3em;
+    flex-direction: row;
+    
+}
+footer .email_box form button{
+    width: 20em;
+}
+footer .Logo{
+    padding: 14em 0 2em 2em;
+    padding-left: 2em;
+    width: 6.8em;
+}    
+footer .logo img{
+    width: 6em;
+    height: 1.7em;
+}
+.inner_footer{
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    padding-left: 2em;
+}
+.inner_footer .location{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+.inner_footer .location p{
+    color: var(--clr-text);
+    line-height: 1.5em;
+    font-size: 1.1rem;
+    width: 16em;
+}
+.inner_footer .phone{
+    margin-bottom: 1em;
+}
+.inner_footer .navbar_1 ul{
+    margin-top: 0;
+}
+.navbar_1{
+    width: 30em;
+    padding:0;
+}
+.inner_footer .navbar_1 ul li{
+    margin-bottom: 1em;
+}
+.inner_footer .navbar_2 ul{
+    list-style: none;
+    color: var(--clr-text);
+}
+.inner_footer .navbar_2 ul li{
+    margin-bottom: 1em;
+}
+.inner_footer .social_media{
+    width: 90%;
+    text-align: center;
+}
+.inner_footer .social_media svg{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+}
+/** end footer **/
+
+}
